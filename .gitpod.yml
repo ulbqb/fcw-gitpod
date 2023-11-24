@@ -1,3 +1,5 @@
+image: ulbqb/fcw-base:latest
+
 vscode:
   extensions:
     - rust-lang.rust-analyzer
