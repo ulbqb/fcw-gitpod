@@ -1,4 +1,4 @@
-image: ulbqb/fcw-base:latest
+image: ulbqb/fcw-gitpod:finschia-2.0.1
 
 vscode:
   extensions:
