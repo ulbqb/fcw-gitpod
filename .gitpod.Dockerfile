@@ -2,8 +2,9 @@ FROM gitpod/workspace-full
 
 USER root
 RUN rustup toolchain install 1.69.0
-RUN rustup default stable
+RUN rustup default 1.69.0
 RUN rustup target add wasm32-unknown-unknown
+RUN rustup default 1.73.0
 RUN cargo install cosmwasm-check
 RUN cargo install cargo-generate
 RUN cargo install -f beaker
