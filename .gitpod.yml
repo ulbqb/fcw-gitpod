@@ -10,10 +10,14 @@ vscode:
     - Spoorthi.cosmy-wasmy
 
 tasks:
-  - name: Open the Readme
-    command: gp open README.md
-
   - name: Setup
+
+    init: |
+      ##
+      # generate workspace.
+      cd .gitpod
+      cargo generate --git https://github.com/ulbqb/beaker-workspace.git --branch main --name tutorial2 --init -o
+      cd ..
 
     command: |
       ##
