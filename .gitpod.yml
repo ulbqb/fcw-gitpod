@@ -1,5 +1,30 @@
-image: ulbqb/fcw-gitpod:finschia-2.0.1
+image:
+  file: .gitpod.Dockerfile
+
+checkoutLocation: "fcw"
+
+workspaceLocation: "./fcw/.gitpod"
 
 vscode:
   extensions:
     - rust-lang.rust-analyzer
+    - Spoorthi.cosmy-wasmy
+
+tasks:
+  - name: Open the Readme
+    command: gp open README.md
+
+  - name: Setup
+
+    command: |
+      ##
+      # cd into the .gitpod dir.
+      cd .gitpod
+
+      ##
+      # print a welcome message.
+      clear && printf '\e[3J'
+      echo -e "
+      This terminal has the \033[1mbeaker\033[0m binary already installed and ready to go.
+
+      "
