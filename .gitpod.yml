@@ -2,7 +2,7 @@ image: ulbqb/fcw-gitpod:finschia-2.0.1
 
 checkoutLocation: "fcw"
 
-workspaceLocation: "./fcw/.gitpod"
+workspaceLocation: "./fcw/gitpod"
 
 vscode:
   extensions:
@@ -15,14 +15,14 @@ tasks:
     init: |
       ##
       # generate workspace.
-      cd .gitpod
+      cd gitpod
       cargo generate --git https://github.com/ulbqb/beaker-workspace.git --branch main --name tutorial2 --init -o
       cd ..
 
     command: |
       ##
-      # cd into the .gitpod dir.
-      cd .gitpod
+      # cd into the gitpod dir.
+      cd gitpod
 
       ##
       # print a welcome message.
