@@ -16,7 +16,7 @@ tasks:
       ##
       # generate workspace.
       cd gitpod
-      cargo generate --git https://github.com/ulbqb/beaker-workspace.git --branch main --name tutorial2 --init -o
+      cargo generate --git https://github.com/ulbqb/beaker-workspace.git --branch main --name tutorial --init -o
       cd ..
 
     command: |
