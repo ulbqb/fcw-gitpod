@@ -14,15 +14,22 @@ tasks:
 
     init: |
       ##
-      # generate workspace.
-      cd gitpod
-      cargo generate --git https://github.com/ulbqb/beaker-workspace.git --branch main --name tutorial --init -o
+      # clone tutorials
       cd ..
+      git clone https://github.com/Finschia/tutorials.git
+      cd gitpod
+
+      ##
+      # generate workspace.
+      cargo generate --git https://github.com/ulbqb/beaker-workspace.git --branch main --name tutorial --init -o
 
     command: |
       ##
-      # cd into the gitpod dir.
-      cd gitpod
+      #
+      
+      cd ../tutorials/localnet/single
+      docker-compose up -d finschia faucet
+      cd ../../../gitpod
 
       ##
       # print a welcome message.
