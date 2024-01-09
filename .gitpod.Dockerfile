@@ -7,7 +7,6 @@ RUN rustup target add wasm32-unknown-unknown
 RUN rustup default 1.73.0
 RUN cargo install cosmwasm-check
 RUN cargo install cargo-generate
-RUN cargo install -f beaker
 RUN rustup default 1.69.0
 
 RUN wget -O /usr/local/bin/fnsad https://github.com/Finschia/finschia/releases/download/v2.0.1/fnsad-2.0.1-linux-amd64
