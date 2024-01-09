@@ -21,7 +21,7 @@ tasks:
 
       ##
       # generate workspace.
-      cargo generate --git https://github.com/ulbqb/beaker-workspace.git --branch main --name tutorial --init -o
+      cargo generate --git https://github.com/ulbqb/fcw-workspace.git --branch main --name tutorial --init -o
 
     command: |
       ##
