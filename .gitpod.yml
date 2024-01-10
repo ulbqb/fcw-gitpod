@@ -21,7 +21,7 @@ tasks:
 
       ##
       # generate workspace.
-      cargo generate --git https://github.com/ulbqb/fcw-workspace.git --branch main --name tutorial --init -o
+      cargo generate --git https://github.com/Finschia/cw-workspace.git --branch main --name tutorial --init -o --branch feat/add_workspace_tempalte
 
     command: |
       ##
