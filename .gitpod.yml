@@ -11,21 +11,24 @@ vscode:
 tasks:
   - name: Setup
 
-    init: |
-      ##
-      # clone tutorials
-      cd ..
-      git clone https://github.com/Finschia/tutorials.git
-      cd gitpod
-
-      ##
-      # generate workspace.
-      cargo generate --git https://github.com/Finschia/cw-workspace.git --branch feat/add_workspace_template --name tutorial --init -o
-
     command: |
-      ##
-      #
+      touch index.js
+
+    # init: |
+    #   ##
+    #   # clone tutorials
+    #   cd ..
+    #   git clone https://github.com/Finschia/tutorials.git
+    #   cd gitpod
+
+    #   ##
+    #   # generate workspace.
+    #   cargo generate --git https://github.com/Finschia/cw-workspace.git --branch feat/add_workspace_template --name tutorial --init -o
+
+    # command: |
+    #   ##
+    #   #
       
-      cd ../tutorials/localnet/single
-      docker-compose up -d finschia faucet
-      cd ../../../gitpod
+    #   cd ../tutorials/localnet/single
+    #   docker-compose up -d finschia faucet
+    #   cd ../../../gitpod
