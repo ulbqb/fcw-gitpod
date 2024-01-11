@@ -12,7 +12,8 @@ tasks:
   - name: Setup
 
     command: |
-      touch index.js
+      mkdir -p test
+      cd test
 
     # init: |
     #   ##
