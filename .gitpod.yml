@@ -1,13 +1,12 @@
-image: ulbqb/fcw-gitpod:finschia-2.0.1
+image: ulbqb/fcw-gitpod:test
 
-checkoutLocation: "fcw"
-
-workspaceLocation: "./fcw/gitpod"
+workspaceLocation: "gitpod"
 
 vscode:
   extensions:
     - rust-lang.rust-analyzer
     - Spoorthi.cosmy-wasmy
+    - tamasfe.even-better-toml
 
 tasks:
   - name: Setup
@@ -30,11 +29,3 @@ tasks:
       cd ../tutorials/localnet/single
       docker-compose up -d finschia faucet
       cd ../../../gitpod
-
-      ##
-      # print a welcome message.
-      clear && printf '\e[3J'
-      echo -e "
-      This terminal has the \033[1mbeaker\033[0m binary already installed and ready to go.
-
-      "

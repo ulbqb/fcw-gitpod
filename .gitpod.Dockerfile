@@ -13,4 +13,3 @@ RUN wget -O /usr/local/bin/fnsad https://github.com/Finschia/finschia/releases/d
 RUN chmod 755 /usr/local/bin/fnsad
 
 USER gitpod
-WORKDIR /workspace
