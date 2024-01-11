@@ -6,7 +6,7 @@ workspaceLocation: "./cw-gitpod/cosmwasm"
 vscode:
   extensions:
     - rust-lang.rust-analyzer
-    - Spoorthi.cosmy-wasmy
+    - https://github.com/spoo-bar/cosmy-wasmy/releases/download/v2.3.1/cosmy-wasmy-2.3.1.vsix
     - tamasfe.even-better-toml
 
 tasks:
@@ -21,7 +21,7 @@ tasks:
 
       ##
       # generate workspace.
-      cargo generate --git https://github.com/Finschia/cw-workspace.git --branch feat/add_workspace_template --name tutorial --init -o
+      cargo generate --git https://github.com/Finschia/cw-workspace.git --name tutorial --init -o
 
     command: |
       ##
