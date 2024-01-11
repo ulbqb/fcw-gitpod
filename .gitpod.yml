@@ -1,6 +1,6 @@
 image: ulbqb/fcw-gitpod:test
 
-workspaceLocation: "gitpod"
+workspaceLocation: "./gitpod"
 
 vscode:
   extensions:
