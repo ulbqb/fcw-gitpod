@@ -1,5 +1,6 @@
 image: ulbqb/fcw-gitpod:test
 
+checkoutLocation: "fcw-gitpod"
 workspaceLocation: "./gitpod"
 
 vscode:
@@ -13,7 +14,6 @@ tasks:
 
     command: |
       mkdir -p test
-      cd test
 
     # init: |
     #   ##
